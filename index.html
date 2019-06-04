@@ -8,12 +8,28 @@
     <title>Color Pallet demo</title>
     <link rel="stylesheet" href="nicks-colors.css">
     <link rel="stylesheet" href="style.css">
+    <script src="main.js"></script>
 </head>
 
 <body>
-    <header></header>
-    <main>
-        <div class="color-class-wrapper">
+    <div id="app">
+        <header>
+            <h1>Color pallet generator</h1>
+        </header>
+
+        <div id="settings">
+            <form>
+                <!--Primary color-->
+                <label for="primary-c">Primary color</label>
+                <input type="color" name="primary-c" id="primary-color-picker" value="#3d9da5">
+                <!--Secondary color-->
+                <label for="secondary-c">Secondary color</label>
+                <input type="color" name="secondary-c" id="secondary-color-picker" value="#ff8040">
+                
+            </form>
+        </div>
+
+        <main class="color-class-wrapper">
             <div class="color-class">
                 <div class="color-tile bg-grey-1"></div>
                 <div class="color-tile bg-grey-2"></div>
@@ -45,12 +61,9 @@
                 <div class="color-tile bg-secondary-7"></div>
                 <div class="color-tile bg-secondary-8"></div>
             </div>
-        </div>
-    </main>
-    <footer></footer>
-
-
-
+        </main>
+        <footer></footer>
+    </div>
 </body>
 
 </html>

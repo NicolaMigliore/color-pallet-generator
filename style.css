@@ -50,3 +50,42 @@
 .bg-secondary-7{ background-color: var(--secondary-7); }
 .bg-secondary-8{ background-color: var(--secondary-8); }
 
+/* Form */
+form{
+    border: solid 0.1em var(--grey-2);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 1em;
+}
+
+form > label{
+    margin: 1em 0 0.3em 0;
+}
+form > input{
+    margin: auto;
+    width: 7em;
+}
+
+/* Grid layout */
+#app{
+    display: grid;
+    grid-template-columns: auto 1fr;
+    grid-template-rows: 1fr auto 1fr;
+    grid-template-areas:
+        "header header"
+        "settings pallet"
+        "footer footer"
+}
+header{
+    grid-area: header;
+}
+#settings{
+    grid-area: settings;
+}
+.color-class-wrapper{
+    grid-area: pallet;
+}
+footer{
+    grid-area: footer;
+}
