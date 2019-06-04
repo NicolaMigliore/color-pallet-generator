@@ -50,8 +50,8 @@
 .bg-secondary-7{ background-color: var(--secondary-7); }
 .bg-secondary-8{ background-color: var(--secondary-8); }
 
-/* Form */
-form{
+/* Settings */
+#settings{
     border: solid 0.1em var(--grey-2);
     display: flex;
     flex-direction: column;
@@ -59,10 +59,10 @@ form{
     padding: 1em;
 }
 
-form > label{
+#settings > label{
     margin: 1em 0 0.3em 0;
 }
-form > input{
+#settings > input{
     margin: auto;
     width: 7em;
 }
@@ -80,7 +80,7 @@ form > input{
 header{
     grid-area: header;
 }
-#settings{
+#settings-wrapper{
     grid-area: settings;
 }
 .color-class-wrapper{

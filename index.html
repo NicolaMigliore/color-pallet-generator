@@ -17,8 +17,8 @@
             <h1>Color pallet generator</h1>
         </header>
 
-        <div id="settings">
-            <form>
+        <div id="settings-wrapper">
+            <div id="settings">
                 <!--Primary color-->
                 <label for="primary-c">Primary color</label>
                 <input type="color" name="primary-c" id="primary-color-picker" value="#3d9da5">
@@ -26,7 +26,8 @@
                 <label for="secondary-c">Secondary color</label>
                 <input type="color" name="secondary-c" id="secondary-color-picker" value="#ff8040">
                 
-            </form>
+                <button onclick="applyColors()">Apply</button>
+            </div>
         </div>
 
         <main class="color-class-wrapper">
@@ -40,7 +41,7 @@
                 <div class="color-tile bg-grey-7"></div>
                 <div class="color-tile bg-grey-8"></div>
             </div>
-            <div class="color-class">
+            <div id="primary-color-class" class="color-class">
                 <div class="color-tile bg-primary-1"></div>
                 <div class="color-tile bg-primary-2"></div>
                 <div class="color-tile bg-primary-3"></div>
@@ -51,7 +52,7 @@
                 <div class="color-tile bg-primary-8"></div>
                 <!-- <input type="color" name="primary-color" id="p-colo-pick"> -->
             </div>
-            <div class="color-class">
+            <div id="secondary-color-class" class="color-class">
                 <div class="color-tile bg-secondary-1"></div>
                 <div class="color-tile bg-secondary-2"></div>
                 <div class="color-tile bg-secondary-3"></div>
