@@ -1,0 +1,88 @@
+
+/*
+-- A color pallet for webapps
+--      By Nicola Migliore (nicola.migliore@hotmail.it)
+*/
+
+
+:root{
+
+    /*--- Greys ---*/
+    --grey-1 : rgb(35, 35, 35);
+    --grey-2 : rgb(65, 65, 65);
+    --grey-3 : rgb(95, 95, 95);
+    --grey-4 : rgb(125, 125, 125);
+    --grey-5 : rgb(155, 155, 155);
+    --grey-6 : rgb(185, 185, 185);
+    --grey-7 : rgb(215, 215, 215);
+    --grey-8 : rgb(245, 245, 245);
+
+    /*--- Primary ---*/
+    --primary-1 : rgb(0,37,45);
+    --primary-2 : rgb(0,67,75);
+    --primary-3 : rgb(1,97,105);
+    --primary-4 : rgb(31,127,135);
+    --primary-5 : rgb(61,157,165);
+    --primary-6 : rgb(91,187,195);
+    --primary-7 : rgb(121,217,225);
+    --primary-8 : rgb(151,225,225);
+
+
+
+    /*--- Secondary ---*/
+    --secondary-1 : rgb(135,8,0);
+    --secondary-2 : rgb(165,38,0);
+    --secondary-3 : rgb(195,68,4);
+    --secondary-4 : rgb(225,98,34);
+    --secondary-5 : rgb(255,128,64);
+    --secondary-6 : rgb(225,158,94);
+    --secondary-7 : rgb(225,188,124);
+    --secondary-8 : rgb(225,218,154);
+
+/*
+    --primary-1 : rgb(0, 45, 30);
+    --primary-2 : rgb(30, 75, 60);
+    --primary-3 : rgb(60, 105, 90);
+    --primary-4 : rgb(90, 135, 120);
+    --primary-5 : rgb(120, 165, 150);
+    --primary-6 : rgb(150, 195, 180);
+    --primary-7 : rgb(180, 225, 210);
+    --primary-8 : rgb(210, 255, 240);
+
+    --secondary-1 : rgb(50, 0, 120);
+    --secondary-2 : rgb(80, 20, 150);
+    --secondary-3 : rgb(120, 50, 180);
+    --secondary-4 : rgb(150, 80, 220);
+    --secondary-5 : rgb(180, 120, 250);
+    --secondary-6 : rgb(210, 150, 255);
+    --secondary-7 : rgb(240, 180, 255);
+    --secondary-8 : rgb(255, 210, 255);
+*/
+
+
+
+
+
+
+
+
+
+
+
+    --stat-new : rgba(165, 110, 20, 1);
+    --stat-new-back : rgba(238, 174, 72, 0.5);
+    --stat-wip : rgba(190, 170, 40, 1);
+    --stat-wip-back : rgba(250, 225, 50, 0.5);
+    --stat-done : rgb(95, 190, 40);
+    --stat-done-back : rgba(140, 250, 50, 0.5);
+  
+    --n-new : rgb(30, 235, 190);
+    --n-wip : rgb(250, 187, 50);
+    --n-done : rgb(30, 235, 40);
+  
+    --input-back-primary : rgb(200,200,200);
+    --input-back-secondary : rgb(210,210,210);
+  
+    --input-det-primary : rgb(100,150,100);
+  
+  }
