@@ -48,10 +48,15 @@ function getGradient(channels, increment) {
 function applyColors() {
     //PrimaryColors
     primaryChannels = hexToRgb(getValue('primary-color-picker'));
-    primaryTiles = Array.from(document.getElementById('primary-color-class').childNodes)
-        .filter((node) => {
-            return node.tagName == 'DIV';
-        });
+    // primaryTiles = Array.from(document.getElementById('primary-color-class').childNodes)
+    //     .filter((node) => {
+    //         return node.tagName == 'DIV';
+    //     });
+    primaryTiles = Array.from(document.getElementById('primary-color-class').children)
+        // .map((child)=>{
+        //     return child.firstElementChild ? child.firstElementChild : child;
+        // });
+
     primaryColors = getGradient(primaryChannels,30);
     console.log(primaryTiles);
     console.log(primaryChannels);
@@ -60,8 +65,16 @@ function applyColors() {
     //     tile.style.backgroundColor(primaryColors[index]);
     // });
 
+    //Cicle tiles and set color
     for(let i = 0; i<primaryTiles.length; i++){
-        console.log(primaryTiles[i]).innerHtml;
+        let tileWrap = primaryTiles[i];
+        if(tileWrap.firstElementChild){
+            tileWrap.children[0].style.backgroundColor = primaryColors[i];
+            tileWrap.children[1].innerHTML = primaryColors[i];
+        }else{
+            primaryTiles[i].style.backgroundColor = primaryColors[i];
+        }
+        
     }
 
 }
