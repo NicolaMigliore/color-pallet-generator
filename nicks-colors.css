@@ -18,6 +18,37 @@
     --grey-8 : rgb(245, 245, 245);
 
     /*--- Primary ---*/
+
+    --primary-1 : rgb(0,132,132);
+    --primary-2 : rgb(0,162,162);
+    --primary-3 : rgb(0,192,192);
+    --primary-4 : rgb(16, 222, 222);
+    --primary-5 : rgb(46,252,252);
+    --primary-6 : rgb(76,225,225);
+    --primary-7 : rgb(106,225,225);
+    --primary-8 : rgb(136,225,225);
+
+    /*--- Secondary ---*/
+    --secondary-1 : rgb(130,0,0);
+    --secondary-2 : rgb(160,12,0);
+    --secondary-3 : rgb(190,42,30);
+    --secondary-4 : rgb(220, 72, 60);
+    --secondary-5 : rgb(250,102,90);
+    --secondary-6 : rgb(225,132,120);
+    --secondary-7 : rgb(225,162,150);
+    --secondary-8 : rgb(225,192,180);
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+
+/*
     --primary-1 : rgb(0,37,45);
     --primary-2 : rgb(0,67,75);
     --primary-3 : rgb(1,97,105);
@@ -27,9 +58,6 @@
     --primary-7 : rgb(121,217,225);
     --primary-8 : rgb(151,225,225);
 
-
-
-    /*--- Secondary ---*/
     --secondary-1 : rgb(135,8,0);
     --secondary-2 : rgb(165,38,0);
     --secondary-3 : rgb(195,68,4);
@@ -38,25 +66,6 @@
     --secondary-6 : rgb(225,158,94);
     --secondary-7 : rgb(225,188,124);
     --secondary-8 : rgb(225,218,154);
-
-/*
-    --primary-1 : rgb(0, 45, 30);
-    --primary-2 : rgb(30, 75, 60);
-    --primary-3 : rgb(60, 105, 90);
-    --primary-4 : rgb(90, 135, 120);
-    --primary-5 : rgb(120, 165, 150);
-    --primary-6 : rgb(150, 195, 180);
-    --primary-7 : rgb(180, 225, 210);
-    --primary-8 : rgb(210, 255, 240);
-
-    --secondary-1 : rgb(50, 0, 120);
-    --secondary-2 : rgb(80, 20, 150);
-    --secondary-3 : rgb(120, 50, 180);
-    --secondary-4 : rgb(150, 80, 220);
-    --secondary-5 : rgb(180, 120, 250);
-    --secondary-6 : rgb(210, 150, 255);
-    --secondary-7 : rgb(240, 180, 255);
-    --secondary-8 : rgb(255, 210, 255);
 */
 
 
