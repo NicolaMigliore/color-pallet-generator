@@ -26,11 +26,14 @@
                 <label for="secondary-c">Secondary color</label>
                 <input type="color" name="secondary-c" id="secondary-color-picker" value="#ff8040">
 
-                <button onclick="applyColors()">Apply</button>
+                <button
+                    onclick="applyColors('primary-color-picker', 'primary-color-class');applyColors('secondary-color-picker', 'secondary-color-class');"
+                >Apply</button>
             </div>
         </div>
 
         <main class="color-class-wrapper">
+            <!-- GREY COLOR -->
             <div class="color-class">
                 <div class="tile-wapper">
                     <div class="color-tile bg-grey-1" name="tile-grey-1"></div>
@@ -64,7 +67,8 @@
                     <div class="color-tile bg-grey-8" name="tile-grey-8"></div>
                     <label for="tile-grey-8">rgb(245, 245, 245)</label>
                 </div>
-                <!-- <div class="color-tile bg-grey-1"></div>
+                <!-- OLD Greys
+                <div class="color-tile bg-grey-1"></div>
                 <div class="color-tile bg-grey-2"></div>
                 <div class="color-tile bg-grey-3"></div>
                 <div class="color-tile bg-grey-4"></div>
@@ -73,6 +77,7 @@
                 <div class="color-tile bg-grey-7"></div>
                 <div class="color-tile bg-grey-8"></div> -->
             </div>
+            <!-- PRIMARY COLOR -->
             <div id="primary-color-class" class="color-class">
                 <div class="tile-wapper">
                     <div class="color-tile bg-primary-1" name="tile-primary-1"></div>
@@ -107,7 +112,7 @@
                     <label for="tile-primary-3"></label>
                 </div>
 
-                <!-- 
+                <!-- OLD Primary
                 <div class="color-tile bg-primary-2" name="tile-primary-2"></div>
                 <div class="color-tile bg-primary-3" name="tile-primary-3"></div>
                 <div class="color-tile bg-primary-4" name="tile-primary-4"></div>
@@ -117,7 +122,41 @@
                 <div class="color-tile bg-primary-8" name="tile-primary-8"></div> -->
                 <!-- <input type="color" name="primary-color" id="p-colo-pick"> -->
             </div>
+            <!-- SECONDARY COLOR -->
             <div id="secondary-color-class" class="color-class">
+                <div class="tile-wapper">
+                    <div class="color-tile bg-secondary-1" name="tile-secondary-1"></div>
+                    <label for="tile-secondary-1"></label>
+                </div>
+                <div class="tile-wapper">
+                    <div class="color-tile bg-secondary-2" name="tile-secondary-2"></div>
+                    <label for="tile-secondary-2"></label>
+                </div>
+                <div class="tile-wapper">
+                    <div class="color-tile bg-secondary-3" name="tile-secondary-3"></div>
+                    <label for="tile-secondary-3"></label>
+                </div>
+                <div class="tile-wapper">
+                    <div class="color-tile bg-secondary-4" name="tile-secondary-4"></div>
+                    <label for="tile-secondary-4"></label>
+                </div>
+                <div class="tile-wapper">
+                    <div class="color-tile bg-secondary-5" name="tile-secondary-5"></div>
+                    <label for="tile-secondary-5"></label>
+                </div>
+                <div class="tile-wapper">
+                    <div class="color-tile bg-secondary-6" name="tile-secondary-6"></div>
+                    <label for="tile-secondary-6"></label>
+                </div>
+                <div class="tile-wapper">
+                    <div class="color-tile bg-secondary-7" name="tile-secondary-7"></div>
+                    <label for="tile-secondary-7"></label>
+                </div>
+                <div class="tile-wapper">
+                    <div class="color-tile bg-secondary-8" name="tile-secondary-8"></div>
+                    <label for="tile-secondary-8"></label>
+                </div>
+                <!-- OLD Secondary
                 <div class="color-tile bg-secondary-1"></div>
                 <div class="color-tile bg-secondary-2"></div>
                 <div class="color-tile bg-secondary-3"></div>
@@ -125,7 +164,7 @@
                 <div class="color-tile bg-secondary-5"></div>
                 <div class="color-tile bg-secondary-6"></div>
                 <div class="color-tile bg-secondary-7"></div>
-                <div class="color-tile bg-secondary-8"></div>
+                <div class="color-tile bg-secondary-8"></div> -->
             </div>
         </main>
         <footer></footer>

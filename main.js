@@ -45,14 +45,14 @@ function getGradient(channels, increment) {
 //Da tenere:    rgb(0,37,45)
 //Da escludere: rgb(181,225,225)
 
-function applyColors() {
+function applyColors(colorPickerClass, tilesWrapperId) {
     //PrimaryColors
-    primaryChannels = hexToRgb(getValue('primary-color-picker'));
+    primaryChannels = hexToRgb(getValue(colorPickerClass ? colorPickerClass :'primary-color-picker'));
     // primaryTiles = Array.from(document.getElementById('primary-color-class').childNodes)
     //     .filter((node) => {
     //         return node.tagName == 'DIV';
     //     });
-    primaryTiles = Array.from(document.getElementById('primary-color-class').children)
+    primaryTiles = Array.from(document.getElementById(tilesWrapperId ? tilesWrapperId :'primary-color-class').children)
         // .map((child)=>{
         //     return child.firstElementChild ? child.firstElementChild : child;
         // });
