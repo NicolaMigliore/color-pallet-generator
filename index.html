@@ -8,7 +8,6 @@
     <title>Color Pallet demo</title>
     <link rel="stylesheet" href="nicks-colors.css">
     <link rel="stylesheet" href="style.css">
-    <script src="main.js"></script>
 </head>
 
 <body>
@@ -22,19 +21,28 @@
                 <!--Primary color-->
                 <label for="primary-c">Primary color</label>
                 <input type="color" name="primary-c" id="primary-color-picker" value="#10dede">
+                <button onclick="applyColors('primary-color-picker', 'primary-color-class')">Apply Primary</button>
                 <!--Secondary color-->
                 <label for="secondary-c">Secondary color</label>
                 <input type="color" name="secondary-c" id="secondary-color-picker" value="#dc483c">
+                <button onclick="applyColors('secondary-color-picker', 'secondary-color-class')">Apply Secondary</button>
 
+                <!--Success color-->
+                <label for="success-c">Secondary color</label>
+                <input type="color" name="success-c" id="success-color-picker" value="#dc483c">
+                <button onclick="applyColors('success-color-picker', 'success-color-class')">Apply Success</button>
+
+                <!--GENERAL-->
                 <button
                     onclick="applyColors('primary-color-picker', 'primary-color-class');applyColors('secondary-color-picker', 'secondary-color-class');"
-                >Apply</button>
+                >Apply General</button>
+                <button onclick="test()">test</button>
             </div>
         </div>
 
         <main class="color-class-wrapper">
             <!-- GREY COLOR -->
-            <div class="color-class">
+            <div id="grey-color-class" class="color-class">
                 <div class="tile-wapper">
                     <div class="color-tile bg-grey-1" name="tile-grey-1"></div>
                     <label class="bg-grey-7" for="tile-grey-1">rgb(35, 35, 35)</label>
@@ -166,9 +174,45 @@
                 <div class="color-tile bg-secondary-7"></div>
                 <div class="color-tile bg-secondary-8"></div> -->
             </div>
+
+            <!-- SUCCESS COLOR -->
+            <div id="success-color-class" class="color-class">
+                    <div class="tile-wapper">
+                        <div class="color-tile bg-success-1" name="tile-success-1"></div>
+                        <label class="bg-grey-7" for="tile-success-1">rgb(135,8,0)</label>
+                    </div>
+                    <div class="tile-wapper">
+                        <div class="color-tile bg-success-2" name="tile-success-2"></div>
+                        <label class="bg-grey-7" for="tile-success-2">rgb(165,38,0)</label>
+                    </div>
+                    <div class="tile-wapper">
+                        <div class="color-tile bg-success-3" name="tile-success-3"></div>
+                        <label class="bg-grey-7" for="tile-success-3">rgb(195,68,4)</label>
+                    </div>
+                    <div class="tile-wapper">
+                        <div class="color-tile bg-success-4" name="tile-success-4"></div>
+                        <label class="bg-grey-7" for="tile-success-4">rgb(225, 98, 34)</label>
+                    </div>
+                    <div class="tile-wapper">
+                        <div class="color-tile bg-success-5" name="tile-success-5"></div>
+                        <label class="bg-grey-7" for="tile-success-5">rgb(255, 128, 64)</label>
+                    </div>
+                    <div class="tile-wapper">
+                        <div class="color-tile bg-success-6" name="tile-success-6"></div>
+                        <label class="bg-grey-7" for="tile-success-6">rgb(225,158,94)</label>
+                    </div>
+                    <div class="tile-wapper">
+                        <div class="color-tile bg-success-7" name="tile-success-7"></div>
+                        <label class="bg-grey-7" for="tile-success-7">rgb(225,188,124)</label>
+                    </div>
+                    <div class="tile-wapper">
+                        <div class="color-tile bg-success-8" name="tile-success-8"></div>
+                        <label class="bg-grey-7" for="tile-success-8">rgb(225,218,154)</label>
+                    </div>
+                </div>
         </main>
         <footer></footer>
     </div>
 </body>
-
+<script src="main.js"></script>
 </html>

@@ -69,6 +69,16 @@ body{
 .bg-secondary-7{ background-color: var(--secondary-7); }
 .bg-secondary-8{ background-color: var(--secondary-8); }
 
+
+.bg-success-1{ background-color: var(--success-1); }
+.bg-success-2{ background-color: var(--success-2); }
+.bg-success-3{ background-color: var(--success-3); }
+.bg-success-4{ background-color: var(--success-4); }
+.bg-success-5{ background-color: var(--success-5); }
+.bg-success-6{ background-color: var(--success-6); }
+.bg-success-7{ background-color: var(--success-7); }
+.bg-success-8{ background-color: var(--success-8); }
+
 /* Settings */
 #settings{
     border: solid 0.1em var(--grey-2);

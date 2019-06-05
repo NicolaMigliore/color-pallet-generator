@@ -19,10 +19,10 @@ function hexToRgb(hex) {
 
 function getGradient(channels, increment) {
     var grad = [];
-    var checkMax = (value)=>{
+    var checkMax = (value) => {
         return value <= 225 ? value : 225;
     };
-    var checkMin = (value)=>{
+    var checkMin = (value) => {
         return value > 0 ? value : 0;
     };
 
@@ -42,46 +42,74 @@ function getGradient(channels, increment) {
     return grad.reverse();
 }
 
-//Da tenere:    rgb(0,37,45)
-//Da escludere: rgb(181,225,225)
+
 
 function applyColors(colorPickerClass, tilesWrapperId) {
     //PrimaryColors
-    primaryChannels = hexToRgb(getValue(colorPickerClass ? colorPickerClass :'primary-color-picker'));
+    primaryChannels = hexToRgb(getValue(colorPickerClass ? colorPickerClass : 'primary-color-picker'));
     // primaryTiles = Array.from(document.getElementById('primary-color-class').childNodes)
     //     .filter((node) => {
     //         return node.tagName == 'DIV';
     //     });
-    primaryTiles = Array.from(document.getElementById(tilesWrapperId ? tilesWrapperId :'primary-color-class').children)
-        // .map((child)=>{
-        //     return child.firstElementChild ? child.firstElementChild : child;
-        // });
+    primaryTiles = Array.from(document.getElementById(tilesWrapperId ? tilesWrapperId : 'primary-color-class').children)
+    // .map((child)=>{
+    //     return child.firstElementChild ? child.firstElementChild : child;
+    // });
 
-    primaryColors = getGradient(primaryChannels,30);
+    primaryColors = getGradient(primaryChannels, 30);
     console.log(primaryTiles);
     console.log(primaryChannels);
-    console.log(getGradient(primaryChannels,30));
+    console.log(getGradient(primaryChannels, 30));
     // primaryTiles.forEach((tile, index) => {
     //     tile.style.backgroundColor(primaryColors[index]);
     // });
 
-    //Cicle tiles and set color
-    for(let i = 0; i<primaryTiles.length; i++){
+    //Cicle tiles and set color and Label
+    for (let i = 0; i < primaryTiles.length; i++) {
         let tileWrap = primaryTiles[i];
-        if(tileWrap.firstElementChild){
+        if (tileWrap.firstElementChild) {
             tileWrap.children[0].style.backgroundColor = primaryColors[i];
             tileWrap.children[1].innerHTML = primaryColors[i];
-        }else{
+        } else {
             primaryTiles[i].style.backgroundColor = primaryColors[i];
         }
-        
+
     }
 
 }
 
+function setLabes(tilesWrapperId) {
+    primaryTiles = Array.from(document.getElementById(tilesWrapperId).children);
+
+    //Cicle tiles and set Label
+    for (let i = 0; i < primaryTiles.length; i++) {
+        let tileWrap = primaryTiles[i];
+        //let lab = tileWrap.children[0].style.backgroundColor;
+        let lab = window.getComputedStyle(tileWrap.children[0]).getPropertyValue('background-color');
+        tileWrap.children[1].innerHTML = lab;
+    }
+}
+
 function test() {
-    let input = util.getById('primary-color-picker');
-    console.log(input);
+    const wrappers = [
+        'grey-color-class',
+        'primary-color-class',
+        'secondary-color-class',
+        'success-color-class'
+    ];
+    console.log('settin up...');
+    wrappers.forEach(wrap => {
+        setLabes(wrap);
+    });
 
 }
 
+// window.onload = function(){
+//     test();
+// }
+
+//When Ready
+(function () {
+    
+    test();
+})();
