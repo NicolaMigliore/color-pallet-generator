@@ -14,6 +14,7 @@ body{
 .color-class{
     display: inline-flex;
     justify-content: space-evenly;
+    margin: 1.5em 0;
 }
 
 .color-tile{
@@ -31,12 +32,12 @@ body{
 .tile-wapper > .color-tile{
     margin: auto;
 }
-.tile-wapper > label{
+.tile-wapper > span{
     text-align: center;
     border: solid 0.1em var(--grey-1);
-    margin: 0.3em 0;
+    /* margin: 0.3em 0;
     padding: 0.1em;
-    width: 10em;
+    width: 10em; */
 }
 
 

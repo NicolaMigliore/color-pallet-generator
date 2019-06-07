@@ -8,6 +8,7 @@
     <title>Color Pallet demo</title>
     <link rel="stylesheet" href="nicks-colors.css">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="tooltip.css">
 </head>
 
 <body>
@@ -29,7 +30,7 @@
 
                 <!--Success color-->
                 <label for="success-c">Secondary color</label>
-                <input type="color" name="success-c" id="success-color-picker" value="#dc483c">
+                <input type="color" name="success-c" id="success-color-picker" value="#00c832">
                 <button onclick="applyColors('success-color-picker', 'success-color-class')">Apply Success</button>
 
                 <!--GENERAL-->
@@ -43,171 +44,142 @@
         <main class="color-class-wrapper">
             <!-- GREY COLOR -->
             <div id="grey-color-class" class="color-class">
-                <div class="tile-wapper">
+                <div class="tile-wapper tooltip">
                     <div class="color-tile bg-grey-1" name="tile-grey-1"></div>
-                    <label class="bg-grey-7" for="tile-grey-1">rgb(35, 35, 35)</label>
+                    <span class="bg-grey-2 tooltiptext" for="tile-grey-1">rgb(35, 35, 35)</span>
                 </div>
-                <div class="tile-wapper">
+                <div class="tile-wapper tooltip">
                     <div class="color-tile bg-grey-2" name="tile-grey-2"></div>
-                    <label class="bg-grey-7" for="tile-grey-2">rgb(65, 65, 65)</label>
+                    <span class="bg-grey-2 tooltiptext" for="tile-grey-2">rgb(65, 65, 65)</span>
                 </div>
-                <div class="tile-wapper">
+                <div class="tile-wapper tooltip">
                     <div class="color-tile bg-grey-3" name="tile-grey-3"></div>
-                    <label class="bg-grey-7" for="tile-grey-3">rgb(95, 95, 95)</label>
+                    <span class="bg-grey-2 tooltiptext" for="tile-grey-3">rgb(95, 95, 95)</span>
                 </div>
-                <div class="tile-wapper">
+                <div class="tile-wapper tooltip">
                     <div class="color-tile bg-grey-4" name="tile-grey-4"></div>
-                    <label class="bg-grey-7" for="tile-grey-4">rgb(125, 125, 125)</label>
+                    <span class="bg-grey-2 tooltiptext" for="tile-grey-4">rgb(125, 125, 125)</span>
                 </div>
-                <div class="tile-wapper">
+                <div class="tile-wapper tooltip">
                     <div class="color-tile bg-grey-5" name="tile-grey-5"></div>
-                    <label class="bg-grey-7" for="tile-grey-5">rgb(155, 155, 155)</label>
+                    <span class="bg-grey-2 tooltiptext" for="tile-grey-5">rgb(155, 155, 155)</span>
                 </div>
-                <div class="tile-wapper">
+                <div class="tile-wapper tooltip">
                     <div class="color-tile bg-grey-6" name="tile-grey-6"></div>
-                    <label class="bg-grey-7" for="tile-grey-6">rgb(185, 185, 185)</label>
+                    <span class="bg-grey-2 tooltiptext" for="tile-grey-6">rgb(185, 185, 185)</span>
                 </div>
-                <div class="tile-wapper">
+                <div class="tile-wapper tooltip">
                     <div class="color-tile bg-grey-7" name="tile-grey-7"></div>
-                    <label class="bg-grey-7" for="tile-grey-7">rgb(215, 215, 215)</label>
+                    <span class="bg-grey-2 tooltiptext" for="tile-grey-7">rgb(215, 215, 215)</span>
                 </div>
-                <div class="tile-wapper">
+                <div class="tile-wapper tooltip">
                     <div class="color-tile bg-grey-8" name="tile-grey-8"></div>
-                    <label class="bg-grey-7" for="tile-grey-8">rgb(245, 245, 245)</label>
+                    <span class="bg-grey-2 tooltiptext" for="tile-grey-8">rgb(245, 245, 245)</span>
                 </div>
-                <!-- OLD Greys
-                <div class="color-tile bg-grey-1"></div>
-                <div class="color-tile bg-grey-2"></div>
-                <div class="color-tile bg-grey-3"></div>
-                <div class="color-tile bg-grey-4"></div>
-                <div class="color-tile bg-grey-5"></div>
-                <div class="color-tile bg-grey-6"></div>
-                <div class="color-tile bg-grey-7"></div>
-                <div class="color-tile bg-grey-8"></div> -->
             </div>
             <!-- PRIMARY COLOR -->
             <div id="primary-color-class" class="color-class">
-                <div class="tile-wapper">
+                <div class="tile-wapper tooltip">
                     <div class="color-tile bg-primary-1" name="tile-primary-1"></div>
-                    <label class="bg-grey-7" for="tile-primary-1"></label>
+                    <span class="bg-grey-2 tooltiptext" for="tile-primary-1"></span>
                 </div>
-                <div class="tile-wapper">
+                <div class="tile-wapper tooltip">
                     <div class="color-tile bg-primary-2" name="tile-primary-2"></div>
-                    <label class="bg-grey-7" for="tile-primary-2"></label>
+                    <span class="bg-grey-2 tooltiptext" for="tile-primary-2"></span>
                 </div>
-                <div class="tile-wapper">
+                <div class="tile-wapper tooltip">
                     <div class="color-tile bg-primary-3" name="tile-primary-3"></div>
-                    <label class="bg-grey-7" for="tile-primary-3"></label>
+                    <span class="bg-grey-2 tooltiptext" for="tile-primary-3"></span>
                 </div>
-                <div class="tile-wapper">
+                <div class="tile-wapper tooltip">
                     <div class="color-tile bg-primary-4" name="tile-primary-4"></div>
-                    <label class="bg-grey-7" for="tile-primary-4"></label>
+                    <span class="bg-grey-2 tooltiptext" for="tile-primary-4"></span>
                 </div>
-                <div class="tile-wapper">
+                <div class="tile-wapper tooltip">
                     <div class="color-tile bg-primary-5" name="tile-primary-5"></div>
-                    <label class="bg-grey-7" for="tile-primary-5"></label>
+                    <span class="bg-grey-2 tooltiptext" for="tile-primary-5"></span>
                 </div>
-                <div class="tile-wapper">
+                <div class="tile-wapper tooltip">
                     <div class="color-tile bg-primary-6" name="tile-primary-6"></div>
-                    <label class="bg-grey-7" for="tile-primary-6"></label>
+                    <span class="bg-grey-2 tooltiptext" for="tile-primary-6"></span>
                 </div>
-                <div class="tile-wapper">
+                <div class="tile-wapper tooltip">
                     <div class="color-tile bg-primary-7" name="tile-primary-7"></div>
-                    <label class="bg-grey-7" for="tile-primary-7"></label>
+                    <span class="bg-grey-2 tooltiptext" for="tile-primary-7"></span>
                 </div>
-                <div class="tile-wapper">
+                <div class="tile-wapper tooltip">
                     <div class="color-tile bg-primary-8" name="tile-primary-8"></div>
-                    <label class="bg-grey-7" for="tile-primary-8"></label>
+                    <span class="bg-grey-2 tooltiptext" for="tile-primary-8"></span>
                 </div>
-
-                <!-- OLD Primary
-                <div class="color-tile bg-primary-2" name="tile-primary-2"></div>
-                <div class="color-tile bg-primary-3" name="tile-primary-3"></div>
-                <div class="color-tile bg-primary-4" name="tile-primary-4"></div>
-                <div class="color-tile bg-primary-5" name="tile-primary-5"></div>
-                <div class="color-tile bg-primary-6" name="tile-primary-6"></div>
-                <div class="color-tile bg-primary-7" name="tile-primary-7"></div>
-                <div class="color-tile bg-primary-8" name="tile-primary-8"></div> -->
-                <!-- <input type="color" name="primary-color" id="p-colo-pick"> -->
             </div>
             <!-- SECONDARY COLOR -->
             <div id="secondary-color-class" class="color-class">
-                <div class="tile-wapper">
+                <div class="tile-wapper tooltip">
                     <div class="color-tile bg-secondary-1" name="tile-secondary-1"></div>
-                    <label class="bg-grey-7" for="tile-secondary-1"></label>
+                    <span class="bg-grey-2 tooltiptext" for="tile-secondary-1"></span>
                 </div>
-                <div class="tile-wapper">
+                <div class="tile-wapper tooltip">
                     <div class="color-tile bg-secondary-2" name="tile-secondary-2"></div>
-                    <label class="bg-grey-7" for="tile-secondary-2"></label>
+                    <span class="bg-grey-2 tooltiptext" for="tile-secondary-2"></span>
                 </div>
-                <div class="tile-wapper">
+                <div class="tile-wapper tooltip">
                     <div class="color-tile bg-secondary-3" name="tile-secondary-3"></div>
-                    <label class="bg-grey-7" for="tile-secondary-3"></label>
+                    <span class="bg-grey-2 tooltiptext" for="tile-secondary-3"></span>
                 </div>
-                <div class="tile-wapper">
+                <div class="tile-wapper tooltip">
                     <div class="color-tile bg-secondary-4" name="tile-secondary-4"></div>
-                    <label class="bg-grey-7" for="tile-secondary-4"></label>
+                    <span class="bg-grey-2 tooltiptext" for="tile-secondary-4"></span>
                 </div>
-                <div class="tile-wapper">
+                <div class="tile-wapper tooltip">
                     <div class="color-tile bg-secondary-5" name="tile-secondary-5"></div>
-                    <label class="bg-grey-7" for="tile-secondary-5"></label>
+                    <span class="bg-grey-2 tooltiptext" for="tile-secondary-5"></span>
                 </div>
-                <div class="tile-wapper">
+                <div class="tile-wapper tooltip">
                     <div class="color-tile bg-secondary-6" name="tile-secondary-6"></div>
-                    <label class="bg-grey-7" for="tile-secondary-6"></label>
+                    <span class="bg-grey-2 tooltiptext" for="tile-secondary-6"></span>
                 </div>
-                <div class="tile-wapper">
+                <div class="tile-wapper tooltip">
                     <div class="color-tile bg-secondary-7" name="tile-secondary-7"></div>
-                    <label class="bg-grey-7" for="tile-secondary-7"></label>
+                    <span class="bg-grey-2 tooltiptext" for="tile-secondary-7"></span>
                 </div>
-                <div class="tile-wapper">
+                <div class="tile-wapper tooltip">
                     <div class="color-tile bg-secondary-8" name="tile-secondary-8"></div>
-                    <label class="bg-grey-7" for="tile-secondary-8"></label>
+                    <span class="bg-grey-2 tooltiptext" for="tile-secondary-8"></span>
                 </div>
-                <!-- OLD Secondary
-                <div class="color-tile bg-secondary-1"></div>
-                <div class="color-tile bg-secondary-2"></div>
-                <div class="color-tile bg-secondary-3"></div>
-                <div class="color-tile bg-secondary-4"></div>
-                <div class="color-tile bg-secondary-5"></div>
-                <div class="color-tile bg-secondary-6"></div>
-                <div class="color-tile bg-secondary-7"></div>
-                <div class="color-tile bg-secondary-8"></div> -->
             </div>
-
             <!-- SUCCESS COLOR -->
             <div id="success-color-class" class="color-class">
-                    <div class="tile-wapper">
+                    <div class="tile-wapper tooltip">
                         <div class="color-tile bg-success-1" name="tile-success-1"></div>
-                        <label class="bg-grey-7" for="tile-success-1">rgb(135,8,0)</label>
+                        <span class="bg-grey-2 tooltiptext" for="tile-success-1"></span>
                     </div>
-                    <div class="tile-wapper">
+                    <div class="tile-wapper tooltip">
                         <div class="color-tile bg-success-2" name="tile-success-2"></div>
-                        <label class="bg-grey-7" for="tile-success-2">rgb(165,38,0)</label>
+                        <span class="bg-grey-2 tooltiptext" for="tile-success-2"></span>
                     </div>
-                    <div class="tile-wapper">
+                    <div class="tile-wapper tooltip">
                         <div class="color-tile bg-success-3" name="tile-success-3"></div>
-                        <label class="bg-grey-7" for="tile-success-3">rgb(195,68,4)</label>
+                        <span class="bg-grey-2 tooltiptext" for="tile-success-3"></span>
                     </div>
-                    <div class="tile-wapper">
+                    <div class="tile-wapper tooltip">
                         <div class="color-tile bg-success-4" name="tile-success-4"></div>
-                        <label class="bg-grey-7" for="tile-success-4">rgb(225, 98, 34)</label>
+                        <span class="bg-grey-2 tooltiptext" for="tile-success-4"></span>
                     </div>
-                    <div class="tile-wapper">
+                    <div class="tile-wapper tooltip">
                         <div class="color-tile bg-success-5" name="tile-success-5"></div>
-                        <label class="bg-grey-7" for="tile-success-5">rgb(255, 128, 64)</label>
+                        <span class="bg-grey-2 tooltiptext" for="tile-success-5"></span>
                     </div>
-                    <div class="tile-wapper">
+                    <div class="tile-wapper tooltip">
                         <div class="color-tile bg-success-6" name="tile-success-6"></div>
-                        <label class="bg-grey-7" for="tile-success-6">rgb(225,158,94)</label>
+                        <span class="bg-grey-2 tooltiptext" for="tile-success-6"></span>
                     </div>
-                    <div class="tile-wapper">
+                    <div class="tile-wapper tooltip">
                         <div class="color-tile bg-success-7" name="tile-success-7"></div>
-                        <label class="bg-grey-7" for="tile-success-7">rgb(225,188,124)</label>
+                        <span class="bg-grey-2 tooltiptext" for="tile-success-7"></span>
                     </div>
-                    <div class="tile-wapper">
+                    <div class="tile-wapper tooltip">
                         <div class="color-tile bg-success-8" name="tile-success-8"></div>
-                        <label class="bg-grey-7" for="tile-success-8">rgb(225,218,154)</label>
+                        <span class="bg-grey-2 tooltiptext" for="tile-success-8"></span>
                     </div>
                 </div>
         </main>
