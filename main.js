@@ -99,10 +99,12 @@ function initialSetUp(channelInterval){
     
     //List of color class wrappers
     const wrappers = [
-        //{ colorClass : 'grey-color-class', tiles : [] },
+        { colorClass : 'grey-color-class', inputId:'grey-color-picker' },
         { colorClass : 'primary-color-class', inputId:'primary-color-picker' },
         { colorClass : 'secondary-color-class', inputId:'secondary-color-picker' },
-        { colorClass : 'success-color-class', inputId:'success-color-picker' }
+        { colorClass : 'success-color-class', inputId:'success-color-picker' },
+        { colorClass : 'warning-color-class', inputId:'warning-color-picker' },
+        { colorClass : 'danger-color-class', inputId:'danger-color-picker' }
     ];
 
     console.log('settin up...');

@@ -19,29 +19,39 @@
 
         <div id="settings-wrapper">
             <div id="settings">
+                <!--Grey color-->
+                <label for="grey-c">Grey color</label>
+                <input type="color" name="grey-c" id="grey-color-picker" value="#9b9b9b">
+                <button onclick="applyColors('grey-color-picker', 'grey-color-class')">Apply Grey</button>
                 <!--Primary color-->
                 <label for="primary-c">Primary color</label>
                 <input type="color" name="primary-c" id="primary-color-picker" value="#10dede">
                 <button onclick="applyColors('primary-color-picker', 'primary-color-class')">Apply Primary</button>
                 <!--Secondary color-->
                 <label for="secondary-c">Secondary color</label>
-                <input type="color" name="secondary-c" id="secondary-color-picker" value="#dc483c">
+                <input type="color" name="secondary-c" id="secondary-color-picker" value="#ffb840">
                 <button onclick="applyColors('secondary-color-picker', 'secondary-color-class')">Apply Secondary</button>
-
                 <!--Success color-->
                 <label for="success-c">Secondary color</label>
                 <input type="color" name="success-c" id="success-color-picker" value="#00c832">
                 <button onclick="applyColors('success-color-picker', 'success-color-class')">Apply Success</button>
+                <!--Alert color-->
+                <label for="warning-c">Secondary color</label>
+                <input type="color" name="warning-c" id="warning-color-picker" value="#ffff2b">
+                <button onclick="applyColors('warning-color-picker', 'warning-color-class')">Apply Warning</button>
+                <!--Danger color-->
+                <label for="danger-c">Danger color</label>
+                <input type="color" name="danger-c" id="danger-color-picker" value="#a22000">
+                <button onclick="applyColors('danger-color-picker', 'danger-color-class')">Apply Warning</button>
+
 
                 <!--GENERAL-->
-                <button
-                    onclick="initialSetUp()"
-                >Apply General</button>
+                <button onclick="initialSetUp()">Apply General</button>
                 <button onclick="test()">test</button>
             </div>
         </div>
 
-        <main class="color-class-wrapper">
+        <div class="color-class-wrapper">
             <!-- GREY COLOR -->
             <div id="grey-color-class" class="color-class">
                 <div class="tile-wapper tooltip">
@@ -149,42 +159,114 @@
             </div>
             <!-- SUCCESS COLOR -->
             <div id="success-color-class" class="color-class">
-                    <div class="tile-wapper tooltip">
-                        <div class="color-tile bg-success-1" name="tile-success-1"></div>
-                        <span class="bg-grey-2 tooltiptext" for="tile-success-1"></span>
-                    </div>
-                    <div class="tile-wapper tooltip">
-                        <div class="color-tile bg-success-2" name="tile-success-2"></div>
-                        <span class="bg-grey-2 tooltiptext" for="tile-success-2"></span>
-                    </div>
-                    <div class="tile-wapper tooltip">
-                        <div class="color-tile bg-success-3" name="tile-success-3"></div>
-                        <span class="bg-grey-2 tooltiptext" for="tile-success-3"></span>
-                    </div>
-                    <div class="tile-wapper tooltip">
-                        <div class="color-tile bg-success-4" name="tile-success-4"></div>
-                        <span class="bg-grey-2 tooltiptext" for="tile-success-4"></span>
-                    </div>
-                    <div class="tile-wapper tooltip">
-                        <div class="color-tile bg-success-5" name="tile-success-5"></div>
-                        <span class="bg-grey-2 tooltiptext" for="tile-success-5"></span>
-                    </div>
-                    <div class="tile-wapper tooltip">
-                        <div class="color-tile bg-success-6" name="tile-success-6"></div>
-                        <span class="bg-grey-2 tooltiptext" for="tile-success-6"></span>
-                    </div>
-                    <div class="tile-wapper tooltip">
-                        <div class="color-tile bg-success-7" name="tile-success-7"></div>
-                        <span class="bg-grey-2 tooltiptext" for="tile-success-7"></span>
-                    </div>
-                    <div class="tile-wapper tooltip">
-                        <div class="color-tile bg-success-8" name="tile-success-8"></div>
-                        <span class="bg-grey-2 tooltiptext" for="tile-success-8"></span>
-                    </div>
+                <div class="tile-wapper tooltip">
+                    <div class="color-tile bg-success-1" name="tile-success-1"></div>
+                    <span class="bg-grey-2 tooltiptext" for="tile-success-1"></span>
                 </div>
+                <div class="tile-wapper tooltip">
+                    <div class="color-tile bg-success-2" name="tile-success-2"></div>
+                    <span class="bg-grey-2 tooltiptext" for="tile-success-2"></span>
+                </div>
+                <div class="tile-wapper tooltip">
+                    <div class="color-tile bg-success-3" name="tile-success-3"></div>
+                    <span class="bg-grey-2 tooltiptext" for="tile-success-3"></span>
+                </div>
+                <div class="tile-wapper tooltip">
+                    <div class="color-tile bg-success-4" name="tile-success-4"></div>
+                    <span class="bg-grey-2 tooltiptext" for="tile-success-4"></span>
+                </div>
+                <div class="tile-wapper tooltip">
+                    <div class="color-tile bg-success-5" name="tile-success-5"></div>
+                    <span class="bg-grey-2 tooltiptext" for="tile-success-5"></span>
+                </div>
+                <div class="tile-wapper tooltip">
+                    <div class="color-tile bg-success-6" name="tile-success-6"></div>
+                    <span class="bg-grey-2 tooltiptext" for="tile-success-6"></span>
+                </div>
+                <div class="tile-wapper tooltip">
+                    <div class="color-tile bg-success-7" name="tile-success-7"></div>
+                    <span class="bg-grey-2 tooltiptext" for="tile-success-7"></span>
+                </div>
+                <div class="tile-wapper tooltip">
+                    <div class="color-tile bg-success-8" name="tile-success-8"></div>
+                    <span class="bg-grey-2 tooltiptext" for="tile-success-8"></span>
+                </div>
+            </div>
+            <!-- WARNING COLOR -->
+            <div id="warning-color-class" class="color-class">
+                <div class="tile-wapper tooltip">
+                    <div class="color-tile bg-warning-1" name="tile-warning-1"></div>
+                    <span class="bg-grey-2 tooltiptext" for="tile-warning-1"></span>
+                </div>
+                <div class="tile-wapper tooltip">
+                    <div class="color-tile bg-warning-2" name="tile-warning-2"></div>
+                    <span class="bg-grey-2 tooltiptext" for="tile-warning-2"></span>
+                </div>
+                <div class="tile-wapper tooltip">
+                    <div class="color-tile bg-warning-3" name="tile-warning-3"></div>
+                    <span class="bg-grey-2 tooltiptext" for="tile-warning-3"></span>
+                </div>
+                <div class="tile-wapper tooltip">
+                    <div class="color-tile bg-warning-4" name="tile-warning-4"></div>
+                    <span class="bg-grey-2 tooltiptext" for="tile-warning-4"></span>
+                </div>
+                <div class="tile-wapper tooltip">
+                    <div class="color-tile bg-warning-5" name="tile-warning-5"></div>
+                    <span class="bg-grey-2 tooltiptext" for="tile-warning-5"></span>
+                </div>
+                <div class="tile-wapper tooltip">
+                    <div class="color-tile bg-warning-6" name="tile-warning-6"></div>
+                    <span class="bg-grey-2 tooltiptext" for="tile-warning-6"></span>
+                </div>
+                <div class="tile-wapper tooltip">
+                    <div class="color-tile bg-warning-7" name="tile-warning-7"></div>
+                    <span class="bg-grey-2 tooltiptext" for="tile-warning-7"></span>
+                </div>
+                <div class="tile-wapper tooltip">
+                    <div class="color-tile bg-warning-8" name="tile-warning-8"></div>
+                    <span class="bg-grey-2 tooltiptext" for="tile-warning-8"></span>
+                </div>
+            </div>
+             <!-- WARNING COLOR -->
+             <div id="danger-color-class" class="color-class">
+                <div class="tile-wapper tooltip">
+                    <div class="color-tile bg-danger-1" name="tile-danger-1"></div>
+                    <span class="bg-grey-2 tooltiptext" for="tile-danger-1"></span>
+                </div>
+                <div class="tile-wapper tooltip">
+                    <div class="color-tile bg-danger-2" name="tile-danger-2"></div>
+                    <span class="bg-grey-2 tooltiptext" for="tile-danger-2"></span>
+                </div>
+                <div class="tile-wapper tooltip">
+                    <div class="color-tile bg-danger-3" name="tile-danger-3"></div>
+                    <span class="bg-grey-2 tooltiptext" for="tile-danger-3"></span>
+                </div>
+                <div class="tile-wapper tooltip">
+                    <div class="color-tile bg-danger-4" name="tile-danger-4"></div>
+                    <span class="bg-grey-2 tooltiptext" for="tile-danger-4"></span>
+                </div>
+                <div class="tile-wapper tooltip">
+                    <div class="color-tile bg-danger-5" name="tile-danger-5"></div>
+                    <span class="bg-grey-2 tooltiptext" for="tile-danger-5"></span>
+                </div>
+                <div class="tile-wapper tooltip">
+                    <div class="color-tile bg-danger-6" name="tile-danger-6"></div>
+                    <span class="bg-grey-2 tooltiptext" for="tile-danger-6"></span>
+                </div>
+                <div class="tile-wapper tooltip">
+                    <div class="color-tile bg-danger-7" name="tile-danger-7"></div>
+                    <span class="bg-grey-2 tooltiptext" for="tile-danger-7"></span>
+                </div>
+                <div class="tile-wapper tooltip">
+                    <div class="color-tile bg-danger-8" name="tile-danger-8"></div>
+                    <span class="bg-grey-2 tooltiptext" for="tile-danger-8"></span>
+                </div>
+            </div>
+
         </main>
         <footer></footer>
     </div>
 </body>
 <script src="main.js"></script>
+
 </html>
