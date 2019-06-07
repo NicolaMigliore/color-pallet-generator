@@ -51,12 +51,12 @@ function applyColors(colorPickerClass, tilesWrapperId) {
     //     .filter((node) => {
     //         return node.tagName == 'DIV';
     //     });
-    primaryTiles = Array.from(document.getElementById(tilesWrapperId ? tilesWrapperId : 'primary-color-class').children)
+    primaryTiles = Array.from(document.getElementById(tilesWrapperId ? tilesWrapperId : 'primary-color-class').children);
     // .map((child)=>{
     //     return child.firstElementChild ? child.firstElementChild : child;
     // });
 
-    primaryColors = getGradient(primaryChannels, 30);
+    let primaryColors = getGradient(primaryChannels, 30);
     console.log(primaryTiles);
     console.log(primaryChannels);
     console.log(getGradient(primaryChannels, 30));
@@ -79,37 +79,61 @@ function applyColors(colorPickerClass, tilesWrapperId) {
 }
 
 function setLabes(tilesWrapperId) {
-    primaryTiles = Array.from(document.getElementById(tilesWrapperId).children);
+    colorTiles = Array.from(document.getElementById(tilesWrapperId).children);
 
     //Cicle tiles and set Label
-    for (let i = 0; i < primaryTiles.length; i++) {
-        let tileWrap = primaryTiles[i];
+    for (let i = 0; i < colorTiles.length; i++) {
+        let tileWrap = colorTiles[i];
         //let lab = tileWrap.children[0].style.backgroundColor;
         let lab = window.getComputedStyle(tileWrap.children[0]).getPropertyValue('background-color');
         tileWrap.children[1].innerHTML = lab;
     }
 }
 
-function test() {
+/**
+ * @description     Initial page setup
+ * @param {Number} channelInterval - Intervall base for gradient steps.
+ */
+function initialSetUp(channelInterval){
+    channelInterval = channelInterval ? channelInterval : 30;
+    
+    //List of color class wrappers
     const wrappers = [
-        'grey-color-class',
-        'primary-color-class',
-        'secondary-color-class',
-        'success-color-class'
+        //{ colorClass : 'grey-color-class', tiles : [] },
+        { colorClass : 'primary-color-class', inputId:'primary-color-picker' },
+        { colorClass : 'secondary-color-class', inputId:'secondary-color-picker' },
+        { colorClass : 'success-color-class', inputId:'success-color-picker' }
     ];
-    console.log('settin up...');
-    wrappers.forEach(wrap => {
-        setLabes(wrap);
-    });
 
+    console.log('settin up...');
+    
+    //Set labels
+    wrappers.forEach(wrap => {
+        // setLabes(wrap);
+        wrap.tiles = Array.from(document.getElementById(wrap.colorClass).children);
+        wrap.channels = hexToRgb(getValue(wrap.inputId));
+        wrap.gradient = getGradient(wrap.channels, channelInterval);
+
+        //Cicle tiles and set color and Label
+        for (let i = 0; i < wrap.tiles.length; i++) {
+            let tileWrap = wrap.tiles[i];
+            if (tileWrap.firstElementChild) {
+                tileWrap.children[0].style.backgroundColor = wrap.gradient[i];
+                tileWrap.children[1].innerHTML = wrap.gradient[i];
+            } else {
+                wrap.tiles[i].style.backgroundColor = wrap.gradient[i];
+            }
+        }
+    });
 }
 
-// window.onload = function(){
-//     test();
-// }
+function test() {
+    
+
+}
 
 //When Ready
 (function () {
     
-    test();
+    initialSetUp();
 })();
